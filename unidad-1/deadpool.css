@@ -1,0 +1,13 @@
+/*Bordes de las tablas*/
+table, th, td {
+    border: 1px solid black
+}
+/* Para centrar la tabla horizontalmente */
+.centrar-tabla {
+    margin: 0 auto;
+    width: fit-content;
+}
+/*Para que el texto este centrado*/
+.centrado {
+    text-align: center;
+}
