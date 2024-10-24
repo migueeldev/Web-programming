@@ -1,0 +1,64 @@
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+p
+{
+    text-align:justify;
+    color:green;
+    font-family:arial;
+}
+#para1
+{
+    text-align:center;
+    color:purple;
+}
+.para1
+{
+    text-align:center;
+    color:purple;
+}
+h1.center{
+    text-align: center;
+}
+
+body{
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+}
+.contenedor{
+    width: 1000px; 
+    height: 800px; 
+    margin: 0 auto;
+}
+nav{
+    float: both;
+    background-color: orange;
+}
+footer{
+    background-color: black;
+    color: white;
+    float: both;
+}
+li{
+    text-align: justify;
+}
+section{
+    background-color: white; 
+    width: 800px; 
+    height: 400px; 
+    float: right;
+}
+aside{
+    background-color:red; 
+    width: 200px; 
+    height: 400px; 
+    float: left;
+}
+header{
+    width: 1000px;
+    height: 150px;
+}

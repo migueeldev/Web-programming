@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Configuración para que el contenido llene la pantalla */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        /* Estructura flexible para el body */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* El contenido principal se expande para ocupar el espacio restante */
+        .content {
+            flex: 1;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+        }
+        .large-text {
+            font-size: 2rem;
+            color: red;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li {
+            text-align: justify;
+        }
+
+        
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Disfraz Mascara Y Capucha Doctor Plague Halloween Cosplay Vanow</h1>
+    </header>
+
+    <div class="content">
+        <div class="container text-center mt-4">
+            <h2>Vista del Producto</h2>
+            
+            <div class="mb-3">
+                <img id="productImage" src="img/principal.webp" alt="Producto Ofertado" class="product-image">
+            </div>
+
+            <div class="btn-group mb-3">
+                <button class="btn btn-primary" onclick="showFront()">Frente</button>
+                <button class="btn btn-secondary" onclick="showLeft()">Izquierda</button>
+                <button class="btn btn-info" onclick="showRight()">Derecha</button>
+                <button class="btn btn-warning" onclick="showBack()">Detrás</button>
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-success" onclick="showInfo()">Ver Información</button>
+                <button class="btn btn-danger" onclick="showPrice()">Ver Precio</button>
+            </div>
+
+            <div id="productInfo" class="d-none">
+                <h2>Descripción del Producto</h2>
+                <ul>
+                    <li>Edad: Adultos</li>
+                    <li>Unidades por pack: 1</li>
+                    <li>Formato de venta: Unidad</li>
+                    <li>Personaje: Halloween Cosplay</li>
+                    <li>Color negro elegante que añade un toque misterioso a tu disfraz.</li>
+                    <li>Cobertura de cabeza entera para un look impactante.</li>
+                    <li>Material de emulsión que proporciona comodidad y durabilidad.</li>
+                    <li>Ideal para Halloween y eventos de cosplay, perfecto para todas las edades.</li>
+                </ul>
+            </div>
+
+            <div id="productPrice" class="d-none">
+                <h2 class="large-text">$249.99</h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;
+            <a href="https://github.com/migueeldev" style="color: black;">migueeldev</a>
+        </p>
+    </footer>
+
+    <script src="practica2Producto.js"></script>
+</body>
+</html>

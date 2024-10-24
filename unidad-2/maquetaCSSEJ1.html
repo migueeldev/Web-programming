@@ -1,0 +1,143 @@
+<!--MAQUETA HTML5 CON EJEMPLOS DE USOS DE CSS DENTRO DEL MISMO ARCHIVO,
+EJEMPLO 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!--CSS Para la tipografia-->
+</head>
+<!--Remplazamos el uso de css(styles) entre lineas, ahora lo definimos desde aqui
+Y podemos definirlo para toda la etiqueta, o podemos acceder al estilo en la 
+etiqueta de deseamos utilizando un indentificador como id o class-->
+
+<style type="text/css">
+    p
+    {
+        text-align:justify;
+        color:green;
+        font-family:arial;
+    }
+    #para1
+    {
+        text-align:center;
+        color:purple;
+    }
+    .para1
+    {
+        text-align:center;
+        color:purple;
+    }
+    h1.center{
+        text-align: center;
+    }
+    
+    body{
+        background-color: yellow;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    .contenedor{
+        width: 1000px; 
+        height: 800px; 
+        margin: 0 auto;
+    }
+    nav{
+        float: both;
+        background-color: orange;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        float: both;
+    }
+    li{
+        text-align: justify;
+    }
+    section{
+        background-color: white; 
+        width: 800px; 
+        height: 400px; 
+        float: right;
+    }
+    aside{
+        background-color:red; 
+        width: 200px; 
+        height: 400px; 
+        float: left;
+    }
+    header{
+        width: 1000px;
+        height: 150px;
+    }
+    </style>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div id="logo" style="background-color: blue; width: 200px; height: 150px; float: left; border: solid right;">
+                <a href="https://github.com/migueeldev">
+                <img src="img/logoGithub.png" alt="github" width="150px" height="100px" style="display: block; margin: auto;"> <!--Aqui va el logo-->
+                </a>
+            </div>
+            <div id="slogan" style="background-color: pink; width: 800px; height: 150px; float: left;">
+                <h1 class="center">Lenguajes de programación más utilizados en la actualidad</h1>
+            </div>
+        </header>
+        <nav>
+            <a href="maquetahtml5.html">Inicio</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="python.html">Python</a>
+            <a href="java.html">Java</a>
+        </nav>
+
+        <aside>
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                <img src="img/JSlogo.png" alt="JSlogo" width="150px" height="100px" style="display: block; margin: auto;"> <!--Aqui va el logo-->
+            </a>
+            <br>
+            <a href="https://www.python.org/">
+                <img src="img/pythonLogo.jpeg" alt="pythonLogo" width="150px" height="100px" style="display: block; margin: auto;" >
+            </a>
+            <br>
+            <a href="https://www.java.com/es/">
+                <img src="img/javaLogo.png" alt="javaLogo" width="150px" height="100px" style="display: block; margin: auto;" >
+            </a>
+
+        </aside>
+
+        <section>
+            <article>
+                <h1 class="center">Tecnologías de desarrollo actuales</h1>
+                <p>La Programación en 2024 se encuentra como una disciplina protagonista, que lleva años ganando terreno en el dinámico escenario de las tecnologías. En ese marco, elegir el lenguaje correcto es crucial para el éxito del desarrollo de software en cualquier proyecto de una organización o empresa.</p>
+                <p id="para1">Los tres lenguajes de programación más utilizados actualmente son:</p>
+
+                <ol>
+                    <li>
+                        <strong>JavaScript:</strong> Es el lenguaje dominante en el desarrollo web, utilizado tanto en el frontend (navegadores) como en el backend (con Node.js). Es esencial para crear interfaces de usuario interactivas y dinámicas.
+                    </li>
+                    <li>
+                        <strong>Python:</strong> Ha crecido en popularidad debido a su facilidad de uso y versatilidad. Se utiliza en áreas como ciencia de datos, inteligencia artificial, automatización, desarrollo web (con frameworks como Django y Flask), y mucho más.
+                    </li>
+                    <li>
+                        <strong>Java:</strong> Es ampliamente utilizado en el desarrollo de aplicaciones empresariales, aplicaciones móviles (especialmente Android), y sistemas embebidos. Su estabilidad y portabilidad lo hacen muy popular en grandes organizaciones.
+                    </li>
+                </ol>
+
+            </article>
+        </section>
+        <footer>
+            <a style="color: blanchedalmond;" href="mailto:miguelangelqpd55@gmail.com">CONTACTAME AQUI</a> 
+            <br>
+            <a style="color: blanchedalmond;" href="https://github.com/migueeldev">GITHUB</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar styles */
+#mainNav {
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+    padding: 1rem 0;
+}
+
+#mainNav.scrolled {
+    background-color: #333;
+}
+/* Custom CSS for navbar icon */
+.navbar-icon {
+    height: 40px; /* Ajusta la altura del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ddd !important;
+    font-size: 1.1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+header .btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+/* Section styles */
+section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 50px 0;
+    text-align: justify;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color: #007bff;
+}
+
+/* Footer social icons */
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f1c40f; /* Cambia el color al pasar el ratón */
+}
+
+.social-icons i {
+    margin: 0 10px;
+}
+
