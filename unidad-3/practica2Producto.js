@@ -20,10 +20,17 @@ function showBack() {
 
 function showInfo() {
     document.getElementById("productInfo").classList.remove("d-none");
+    document.getElementById("hideInfoBtn").classList.remove("d-none");
     document.getElementById("productPrice").classList.add("d-none");
+}
+
+function hideInfo() {
+    document.getElementById("productInfo").classList.add("d-none");
+    document.getElementById("hideInfoBtn").classList.add("d-none");
 }
 
 function showPrice() {
     document.getElementById("productPrice").classList.remove("d-none");
     document.getElementById("productInfo").classList.add("d-none");
+    document.getElementById("hideInfoBtn").classList.add("d-none");
 }
