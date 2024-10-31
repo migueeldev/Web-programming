@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* General layout */
+        body, html {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main section */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        /* Center calculator content */
+        .calculator-container {
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            color: #007bff;
+        }
+
+        /* Footer social icons */
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+
+        .social-icons i {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Calculadora Basica en JavaScript</h1>
+    </header>
+    
+    <main>
+        <div class="calculator-container">
+            <form name="form" action="" method="get">
+                <h2>Introduce el numero 1</h2>
+                <input type="text" id="num1" class="form-control mb-2">
+                <h2>Introduce el numero 2</h2>
+                <input type="text" id="num2" class="form-control mb-4">
+            </form>
+            
+            <div class="btn-group mb-3">
+                <button class="btn btn-primary" onclick="suma()">Suma</button>
+                <button class="btn btn-secondary" onclick="multi()">Multiplicacion</button>
+                <button class="btn btn-info" onclick="restar()">Restar</button>
+                <button class="btn btn-warning" onclick="dividir()">Dividir</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="practica3Calculadora.js"></script>
+
+    <footer>
+        <div class="container text-center text-white">
+            <p class="m-0">Copyright &copy; migueeldev</p>
+            <div class="social-icons mt-3">
+                <a href="https://github.com/migueeldev" target="_blank" class="text-white"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
