@@ -1,0 +1,4 @@
+<p style="text-align: justify; color: red;">Nuestra misión es ofrecer un servicio educativo de excelencia en la enseñanza del idioma inglés, utilizando metodologías innovadoras y personalizadas que permitan a nuestros estudiantes alcanzar sus metas lingüísticas. Fomentamos un ambiente de aprendizaje inclusivo y estimulante, asegurando que cada alumno desarrolle confianza y habilidades comunicativas efectivas en inglés. 
+</p>
+<br>
+<img src="2.jpeg" alt="tip">

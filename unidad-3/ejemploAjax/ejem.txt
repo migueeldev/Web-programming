@@ -1,0 +1,2 @@
+﻿<p style="color:blue; text-align: justify;">Personal English School es una empresa dedicada a la enseñanza del idioma inglés a personas de todas las edades, desde niños hasta adultos. Nuestro objetivo es proporcionar una educación de calidad adaptada a las necesidades individuales de cada estudiante, facilitando su aprendizaje en un entorno amigable y dinámico. Ya sea que busques mejorar tu inglés para propósitos académicos, laborales o personales, estamos aquí para acompañarte en cada paso de tu camino hacia la fluidez.<br></p>
+<img src="anuncio.png" alt="aunicio">

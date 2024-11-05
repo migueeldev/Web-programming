@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaquetaAjax</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* General  */
+        body, html {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section styles */
+        section {
+            text-align: center;
+            padding: 40px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Container para buttons en horizontal*/
+        .button-container {
+            display: flex;
+            gap: 10px; /* Espacio entre botones */
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Button styles */
+        .btn-custom {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Imagen estilo */
+        section img {
+            height: 200px; /* Aumentar el tamaño de la imagen */
+            width: auto;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; /* Empuja el footer hacia la parte inferior */
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer p a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer p a:hover {
+            color: #007bff;
+        }
+
+        /* Footer icono Github */
+        .social-icons a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f1c40f;
+        }
+
+        .social-icons i {
+            margin: 0 10px;
+        }
+    </style>
+
+    <!--Script para la interaccion de ajax(con archivos externos)-->
+    <script>
+        function load() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ejem.txt", true);
+            xhttp.send();
+        }
+
+        function load2() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "ejem2.txt", true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Personal English School</h1>
+    </header>
+    
+    <section>
+        <!-- Contenedor para los botones en línea horizontal -->
+        <div class="button-container">
+            <a href="index.html"><button class="btn btn-custom">Inicio</button></a>
+            <button class="btn btn-custom" onclick="load()">Acerca de</button>
+            <button class="btn btn-custom" onclick="load2()">Misión</button>
+        </div>
+
+        <h2>Personal English School</h2>
+
+        <div id="demo">
+            <p>Bienvenidos al sitio oficial de la Academia de Inglés</p>
+            <img src="logo2.png" alt="logo">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center text-white">
+            <p class="m-0">Copyright &copy; migueeldev</p>
+            <div class="social-icons mt-3">
+                <a href="https://github.com/migueeldev" target="_blank" class="text-white"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
