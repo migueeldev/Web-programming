@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nuevaPersona</title>
+    <title>Eliminacion</title>
     <style>
         /* Estilos generales */
         body, html {
@@ -51,37 +51,17 @@
 <body>
     <div class="result-box">
         <?php
-        # Salir si alguno de los datos no está presente
-        if(!isset($_POST["nombre"]) || !isset($_POST["apellidos"]) || !isset($_POST["sexo"]) || 
-            !isset($_POST["correo_electronico"]) || !isset($_POST["edad"]) || 
-            !isset($_POST["fecha_nacimiento"])) exit();
-
+        if (!isset($_GET["id"])) exit();
+        $id = $_GET["id"];
         include_once "base_de_datos.php";
-
-        $nombre = $_POST["nombre"];
-        $apellidos = $_POST["apellidos"];
-        $sexo = $_POST["sexo"];
-        $correo_electronico = $_POST["correo_electronico"];
-        $edad = $_POST["edad"];
-        $fecha_nacimiento = $_POST["fecha_nacimiento"];
-
-        # Preparar la sentencia SQL para insertar los datos en la base de datos
-        $sentencia = $base_de_datos->prepare("INSERT INTO personas(nombre, apellidos, sexo, correo_electronico, edad, fecha_nacimiento) VALUES (?, ?, ?, ?, ?, ?);");
-
-        # Ejecutar la sentencia con los valores en el mismo orden que los signos ?
-        $resultado = $sentencia->execute([$nombre, $apellidos, $sexo, $correo_electronico, $edad, $fecha_nacimiento]);
-
-
-        # Comprobar si la inserción fue exitosa
-        if($resultado === TRUE) {
-            echo "Insertado correctamente";
-        } else {
-            echo "Algo salió mal. Por favor verifica que la tabla exista y que los datos sean correctos.";
-        }
+        $sentencia = $base_de_datos->prepare("DELETE FROM personas WHERE id = ?;");
+        $resultado = $sentencia->execute([$id]);
+        if($resultado === TRUE) echo "Eliminado correctamente";
+        else echo "Algo salio mal";
         ?>
     <br> 
         <a href="formulario.html">Inicio</a>
         <a href="listarPersonas.php">Consultar Registros</a>
-    </div>
+</div>   
 </body>
 </html>
