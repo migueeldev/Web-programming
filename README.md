@@ -1,12 +1,5 @@
 # 🌐 Programación Web
 
-Este repositorio contiene todo el material de la materia **Programación Web**. Aquí encontrarás el código fuente, y recursos extra.
-
-## 📋 Autor:
-**[migueeldev](https://github.com/migueeldev)**  
-
----
-
 ## 🗂 Estructura
 
 ### Unidad 1: Introducción a las aplicaciones web
@@ -28,20 +21,3 @@ Este repositorio contiene todo el material de la materia **Programación Web**. 
 ### Unidad 5: Proyecto Final
 - **Ruta**: [Unidad 5](./unidad-5/)
 - **Contenidos**: Aplicación web completa, integración de frontend y backend.
-
----
-
-## 📚 Recursos Extra
-
-Aquí tienes algunos recursos adicionales para complementar lo aprendido en clase:
-
-- [Documentación de HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-- [Guía de CSS](https://developer.mozilla.org/es/docs/Web/CSS)
-- [JavaScript para Principiantes](https://www.javascript.com/learn)
-- [Introducción a PHP](https://www.php.net/manual/es/intro-whatis.php)
-- [Documentación de diferentes lenguajes de programación](https://devdocs.io/)
-- [Tutoriales de diferentes lenguajes de programación](https://www.w3schools.com/)
-
----
-
-- **Email**: [migueeldev@gmail.com](mailto:migueeldev@gmail.com)
